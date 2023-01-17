@@ -9,6 +9,7 @@
 header {
     background: rgba(255, 144, 14, 0.1);
     margin-bottom: 50px;
+    width: 1920px;
 }
 
 nav {
@@ -367,4 +368,100 @@ nav li {
     font-weight: 400;
     font-size: 20px;
     color: #424242;
+}
+@media screen and (max-width:576px) {
+    /*----header part----*/
+    nav{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 30px;
+        padding-left: 0px;
+    }
+    nav li{
+        font-size: 45px;
+        margin: left 0;
+        
+    }
+    .header-text h2{
+        margin-left:0px;
+        width: 550px;
+        text-align: left;
+    }
+    .header-text p{
+        font-size: 45px;
+        margin-left:0px;
+        width: 1200px;
+        text-align: left;
+    }
+    .btn-primary{
+        width: 300px;
+        margin-left: 0;
+        font-size: 25px;
+    }
+    .header-img img{
+        margin-left: 0;
+    }
+    
+    /*----body part----*/
+    /*----section-1----*/
+    .team {
+        display: inline;
+        padding-left: 0;
+        padding-bottom: 600px;
+    }
+    .team-work{
+        display: grid;
+        grid-template-columns: repeat(1,fr)
+    }
+    .team-title {
+        padding-left: 0;
+    }
+    .team-description{
+        padding-left: 0;
+        font-size: 45px;
+    }
+    .btn-secondary{
+        margin-left: 0;
+    }
+    /*----section-2----*/
+    .paison{
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .paison-description-1{
+        font-size: 45px;
+    }
+    /*----section-3----*/
+    .icon-title{
+        margin-left: 0;
+    }
+    .icon-description{
+        margin-left: 0;
+        font-size: 45px;
+    }
+    .icons{
+        flex-direction: column;
+        margin-left: 0;
+    }
+    /*----section-4----*/
+    .sponsors-description{
+        margin-left: 0;
+        font-size: 45px;
+        text-align: left;
+    }
+    .sponsors{
+        flex-direction: column;
+        margin-left: 0;
+        gap: 20px;
+
+    }
+    /*----section-5----*/
+    .about{
+        margin-left: 0;
+    }
+    .footer{
+        margin-left: 0;
+        width: 1000px;
+        font-size: 75px;
+    }
 }
